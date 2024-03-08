@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #ffcbf2,#f3c4fb,#ecbcfd,#e5b3fe,#e2afff,#deaaff,#d8bbff,#d0d1ff,#c8e7ff,#c0fdff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  button{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    border-radius: 20px;
+	  border: 1px solid #000000;
+	  background-color: #FF4B2B;
+	  color: #FFFFFF;
+	  font-size: 12px;
+	  font-weight: bold;
+	  padding: 12px 25px;
+	  letter-spacing: 3px;
+	  text-transform: capitalize;
+	  transition: transform 80ms ease-in;
+  }
+  button:active {
+    transform: scale(0.95);
+  }
+
+  #imageInput {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .image {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+  
+  .image img:hover {
+    transform: scale(1.1);
+  }
+  
+  .image:nth-child(4n+1) {
+    order: 1;
+  }
+  
+  .image:nth-child(4n+2) {
+    order: 2;
+  }
+  
+  .image:nth-child(4n+3) {
+    order: 3;
+  }
+  
+  .image:nth-child(4n) {
+    order: 4;
+  }
