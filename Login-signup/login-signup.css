@@ -18,7 +18,7 @@ body {
 	overflow: hidden;
 }
 
-.back-button {
+/* .back-button {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -29,7 +29,7 @@ body {
 	padding: 4px 4px 4px 4px;
     display: flex;
     align-items: center;
-}
+} */
 
 h1 {
 	font-weight: bold;
@@ -99,6 +99,8 @@ form {
 input {
 	background-color: #eee;
 	border: none;
+	border-radius: 25px;
+	text-align: center;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
@@ -226,7 +228,7 @@ input {
 	transform: translateX(20%);
 }
 
-.social-container {
+.social-container{
 	margin: 20px 0;
 }
 
@@ -241,6 +243,20 @@ input {
 	height: 40px;
 	width: 40px;
 }
+.social-container a:hover {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	scale: 1.1;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
 .center-text {
 	text-align: center;
 	margin-bottom: 15px;
