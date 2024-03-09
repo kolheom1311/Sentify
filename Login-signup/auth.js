@@ -105,6 +105,25 @@ function login () {
     })
   }
 
+  // Google Sign-In function
+function googleSignUp() {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider)
+    .then((result) => {
+      // User signed in successfully
+      var user = result.user;
+      console.log('User signed in:', user);
+      alert('Google Sign-up successful!');
+    })
+    .catch((error) => {
+      // Handle errors
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.error('Google Sign-up error:', errorMessage);
+      alert('Google Sign-up failed. Please try again.');
+    });
+}
+
 // Validate Functions
 function validate_email(email) {
   expression = /^[^@]+@\w+(\.\w+)+\w$/;
