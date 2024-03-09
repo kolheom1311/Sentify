@@ -14,12 +14,12 @@ body {
     right: 25px;
     border-radius: 20px;
 	  border: 1px solid #000000;
-	  background-color: #FF4B2B;
+	  background-color: #9500ff;
 	  color: #FFFFFF;
-	  font-size: 12px;
+	  font-size: 10px;
 	  font-weight: bold;
-	  padding: 12px 25px;
-	  letter-spacing: 3px;
+	  padding: 12px 12px;
+	  /* letter-spacing: 3px; */
 	  text-transform: capitalize;
 	  transition: transform 80ms ease-in;
   }
